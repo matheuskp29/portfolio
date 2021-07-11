@@ -149,9 +149,9 @@ header{
     color: white;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    background: #6a3093;
-    background: -webkit-linear-gradient(to right, #a044ff, #6a3093); 
-    background: linear-gradient(to right, #a044ff, #6a3093);
+    background: #8e0e00; 
+    background: -webkit-linear-gradient(to right, #8e0e00, #1f1c18);
+    background: linear-gradient(to right, #8e0e00, #1f1c18);
     padding: 1rem 3rem;
     border: none;
     border-radius: 5px;
@@ -161,8 +161,11 @@ header{
 }
 
 .banner button:hover{
-    color: black;
-    background: whitesmoke;
+    color: white;
+    background: #fe8c00;
+    background: -webkit-linear-gradient(to right, #fe8c00, #f83600);
+    background: linear-gradient(to right, #fe8c00, #f83600);
+    transition: background-color 1.5s, color 1.5s;
 }
 
 @keyframes moveBanner{
@@ -210,7 +213,7 @@ header{
 }
 
 .menu-link:hover{
-    color: #6a3093;
+    color: #fe8c00;
 }
 
 .social-media{
@@ -234,7 +237,7 @@ header{
 }
 
 .social-media i:hover{
-    background-color: #a044ff;
+    background-color: #fe8c00;
     color: white;
 }
 
@@ -289,7 +292,7 @@ header{
     font-family: var(--font-primary);
     font-size: 3rem;
     color: #4b4b4b;
-    border-bottom: solid 3px #6a3093;
+    border-bottom: solid 3px #fe8c00;
     margin-bottom: 1.5rem;
 }
 
@@ -331,7 +334,7 @@ header{
 }
 
 .card{
-    width: 15rem;
+    width: 18rem;
     height: 24rem;
     position: relative;
     margin-bottom: 2rem;
@@ -378,22 +381,22 @@ header{
 .card-info h3{
     font-family: var(--font-action);
     font-weight: bolder;
-    color: rgb(255, 67, 67);
+    color: #f46b45;
     margin-bottom: 1.5rem;
 }
 
 .card-info p{
     font-family: var(--font-secundary);
-    font-weight: 400;
+    font-weight: 600;
     color: #eee;
     width: 80%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .btn{
-    background: #6a3093;
-    background: -webkit-linear-gradient(to right, #a044ff, #6a3093); 
-    background: linear-gradient(to right, #a044ff, #6a3093);
+    background: #8e0e00; 
+    background: -webkit-linear-gradient(to right, #8e0e00, #1f1c18);
+    background: linear-gradient(to right, #8e0e00, #1f1c18);
     font-family: var(--font-action);
     font-size: .8rem;
     color: #eee;
@@ -405,13 +408,14 @@ header{
 .card-info button{
     width: 8rem;
     height: 2.5rem;
-    transition: background-color 1.5s, color 1.5s;
+    transition: background-color 2.5s;
     cursor: pointer;
 }
 
 .card-info button:hover{
-    background: white;
-    color: #6a3093;
+    background: #fe8c00;
+    background: -webkit-linear-gradient(to right, #fe8c00, #f83600);
+    background: linear-gradient(to right, #fe8c00, #f83600);
 }
 
 .card:hover .card-info{
@@ -437,7 +441,7 @@ header{
 }
 
 .contato-left{
-    width: 35%;
+    width: 60%;
     background: 
         linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), 
         url(imagens/contato.jpg);
@@ -519,70 +523,10 @@ header{
     box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
 }
 
-.sessao-orcamento{
-    width: 100%;
-    height: 100vh;
-    background: url("./imagens/bg-orcamento.jpg");
-    object-fit: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.orcamento-wrapper{
-    width: 60%;
-    height: 80%;
-    background-color: #ffffff99;
-    border-radius: 10px;
-    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
-    position: relative;
-}
-
-.sessao-orcamento h1{
-    position: absolute;
-    top: -2.5rem;
-    left: 2rem;
-    background: #6a3093;
-    background: -webkit-linear-gradient(to right, #a044ff, #6a3093); 
-    background: linear-gradient(to right, #a044ff, #6a3093);
-    padding: 0 3rem;
-    color: #fff;
-    font-family: var(--font-primary);
-    font-size: 3rem;
-    font-weight: lighter;
-    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-}
-
-.sessao-orcamento form{
-    margin: 4rem;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    column-gap: 2rem;
-    row-gap: 2rem;
-}
-
-.sessao-orcamento label{
-    font-family: var(--font-action);
-    font-size: 1.5rem;
-}
-
-.sessao-orcamento input[type="number"]{
-    font-family: var(--font-secundary);
-    width: 4rem;
-    font-size: 2rem;
-    outline: none;
-    border-radius: 10px;
-    border: none;
-    padding: 0.3rem;
-}
-
-.btn-orcamento{
-    text-transform: uppercase;
-    padding: 1rem;
-    cursor: pointer;
-    grid-column: 2;
+.btn-submit:hover{
+    background: #fe8c00;
+    background: -webkit-linear-gradient(to right, #fe8c00, #f83600);
+    background: linear-gradient(to right, #fe8c00, #f83600);
 }
 
 footer{
@@ -622,9 +566,9 @@ footer{
     bottom: 3rem;
     width: 3rem;
     height: 3rem;
-    background: #6a3093;
-    background: -webkit-linear-gradient(to right, #a044ff, #6a3093); 
-    background: linear-gradient(to right, #a044ff, #6a3093);
+    background: #8e0e00; 
+    background: -webkit-linear-gradient(to right, #8e0e00, #1f1c18);
+    background: linear-gradient(to right, #8e0e00, #1f1c18);
     display: flex;
     justify-content: center;
     align-items: center;
