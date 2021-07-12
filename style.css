@@ -308,12 +308,13 @@ header{
 
 .conhecimento-header h3{
     font-family: var(--font-secundary);
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding-left: 1rem;
 }
 
 .conhecimento-text{
     font-family: var(--font-secundary);
+    font-size: 1rem;
     margin-top: 1rem;
 }
 
